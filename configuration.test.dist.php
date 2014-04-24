@@ -44,6 +44,12 @@ $config = array(
     'permissions' => array(
         'data/DoctrineORMModule/Proxy' => 0777,
         'public/uploads/images' => 0777
-    )
+    ),
 
+    'doctrine' => array(
+        'cmd_linux' => 'php vendor/bin/doctrine.php',
+        //only for local installation
+        'cmd_windows' => 'php vendor/bin/doctrine.php',
+        'update' => true
+    )
 );
